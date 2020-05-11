@@ -57,4 +57,4 @@ npm run dev
 
 👤 **Rafi Olaverria**
 
-- LinkedIn: [@Rjolaverria](https://linkedin.com/in/Rjolaverria)
+- LinkedIn: [@RafiOlaverria](https://linkedin.com/in/RafiOlaverria)
