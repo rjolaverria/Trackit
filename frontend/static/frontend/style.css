@@ -1,0 +1,79 @@
+/* Landing Image*/
+.landing {
+  position: relative;
+  background: url('./map.png') no-repeat center center/cover;
+  height: 91vh;
+}
+
+/* Overlay */
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+@media (max-width: 409px) {
+  .non-mobile {
+    display: none;
+  }
+}
+
+/*Transitions*/
+.s-trans {
+  transition: all 10s ease-in;
+}
+
+/* Animations*/
+.trans-fade {
+  animation: fade 0.5s;
+}
+
+#charts {
+  transform: translateX(-1200px);
+  animation: x 1.5s forwards ease-in-out;
+}
+
+#logger {
+  transform: translateX(1200px);
+  animation: x 1.5s 0.3s forwards ease-in-out;
+}
+
+#trips {
+  transform: translateY(200px);
+  animation: y 1s 0.5s forwards ease-in;
+}
+
+@keyframes x {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes y {
+  to {
+    transform: translatey(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
