@@ -12,7 +12,6 @@ django = "*"
 djangorestframework = "*"
 django-rest-knox = "*"
 googlemaps = "*"
-djangorestframework-csv = "*"
 
 [requires]
 python_version = "3.7"
