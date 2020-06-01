@@ -29,35 +29,35 @@ const Login = ({ login, authenticated }) => {
     <section className='text-center mt-4 container'>
       <h1 className='display-3 text-primary mb-4'>Sign In</h1>
       <div
-        className='mx-auto col-sm bg-light p-4 text-left '
+        className='mx-auto col-sm bg-light p-4 text-left shadow'
         style={{ maxWidth: 450 }}
       >
         <form onSubmit={onSubmit}>
-          <label className='form-group d-block'>
-            Username:
+          <label className='form-group d-block bg-white shadow p-1'>
             <input
               type='text'
-              className='form-control mt-1'
+              className='form-control mt-1 border-0'
               id='InputUser'
               name='username'
               onChange={onChange}
               value={username}
+              placeholder='Username'
               required
             />
           </label>
-          <label className='form-group d-block'>
-            Password:
+          <label className='form-group d-block bg-white shadow p-1'>
             <input
               type='password'
-              className='form-control mt-1'
+              className='form-control mt-1 border-0'
               id='InputPassword'
               name='password'
               onChange={onChange}
               value={password}
+              placeholder='Password'
               required
             />
           </label>
-          <button type='submit' className='btn btn-primary'>
+          <button type='submit' className='btn btn-primary shadow'>
             Sign In
           </button>
         </form>

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f7f48d1c553944a26d8e7e2da3794b68e43c3bb6ea0cc5c8b088eb1480c6779c"
+            "sha256": "aa35800fadaa2c22c62ff0761d67fc909106501d3843931523091ed30f66c8be"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -119,19 +119,12 @@
             "index": "pypi",
             "version": "==3.11.0"
         },
-        "djangorestframework-csv": {
-            "hashes": [
-                "sha256:2f008b20a44f2d3c37835ea5b5ddfe19f54394f07b9cb267c616a917a7f7e27c"
-            ],
-            "index": "pypi",
-            "version": "==2.1.0"
-        },
         "googlemaps": {
             "hashes": [
-                "sha256:38e73e21670807ddb26b23a788d701427909a0cb3436e095745482a6931f9a4a"
+                "sha256:0336594884640d5a299b84d2ec1700908d5d1d049ea08e7efddca5fc94226d23"
             ],
             "index": "pypi",
-            "version": "==4.3.1"
+            "version": "==4.4.0"
         },
         "idna": {
             "hashes": [
@@ -174,12 +167,6 @@
                 "sha256:e162203737712307dfe78860cc56c8da8a852ab2ee33750e33aeadf38d12c548"
             ],
             "version": "==0.3.1"
-        },
-        "unicodecsv": {
-            "hashes": [
-                "sha256:018c08037d48649a0412063ff4eda26eaa81eff1546dbffa51fa5293276ff7fc"
-            ],
-            "version": "==0.14.1"
         },
         "urllib3": {
             "hashes": [
@@ -246,10 +233,10 @@
         },
         "pycodestyle": {
             "hashes": [
-                "sha256:95a2219d12372f05704562a14ec30bc76b05a5b297b21a5dfe3f6fac3491ae56",
-                "sha256:e40a936c9a450ad81df37f549d676d127b1b66000a6c500caa2b085bc0ca976c"
+                "sha256:2295e7b2f6b5bd100585ebcb1f616591b652db8a741695b3d8f5d28bdc934367",
+                "sha256:c58a7d2815e0e8d7972bf1803331fb0152f867bd89adf8a01dfd55085434192e"
             ],
-            "version": "==2.5.0"
+            "version": "==2.6.0"
         },
         "pylint": {
             "hashes": [
@@ -268,10 +255,10 @@
         },
         "toml": {
             "hashes": [
-                "sha256:229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c",
-                "sha256:235682dd292d5899d361a811df37e04a8828a5b1da3115886b73cf81ebc9100e"
+                "sha256:926b612be1e5ce0634a2ca03470f95169cf16f939018233a670519cb4ac58b0f",
+                "sha256:bda89d5935c2eac546d648028b9901107a595863cb36bae0c73ac804a9b4ce88"
             ],
-            "version": "==0.10.0"
+            "version": "==0.10.1"
         },
         "typed-ast": {
             "hashes": [

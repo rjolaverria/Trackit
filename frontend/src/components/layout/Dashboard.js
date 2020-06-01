@@ -7,7 +7,7 @@ import Logger from './Logger';
 import Charts from './Charts';
 import Trips from './Trips';
 
-const Dashboard = ({ auth, getTrips, trips }) => {
+const Dashboard = ({ getTrips }) => {
   useEffect(() => {
     getTrips();
   }, []);
@@ -24,14 +24,7 @@ const Dashboard = ({ auth, getTrips, trips }) => {
 };
 
 Dashboard.propTypes = {
-  auth: PropTypes.object.isRequired,
   getTrips: PropTypes.func.isRequired,
-  trips: PropTypes.array.isRequired,
 };
 
-const mapDispatchToProps = (state) => ({
-  auth: state.authReducer,
-  trips: state.tripsReducer.trips,
-});
-
-export default connect(mapDispatchToProps, { getTrips, addTrip })(Dashboard);
+export default connect(null, { getTrips, addTrip })(Dashboard);

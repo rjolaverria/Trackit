@@ -207,7 +207,7 @@ const Trips = ({ trips, getAllCSV, getResultsCSV, deleteTrip }) => {
           <h4 className='text-center'>
             {searchData.search ? 'Search Results' : 'Recent Trips'}
           </h4>
-          <table className='table table-hover table-sm mt-2 bg-white trans-fade shadow'>
+          <table className='table table-hover table-sm mt-2 bg-white trans-fade shadow rounded-all'>
             <thead className='thead-dark'>
               <tr>
                 <th scope='col'>From</th>

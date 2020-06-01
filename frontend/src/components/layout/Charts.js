@@ -121,7 +121,7 @@ const Charts = ({ trips: { trips, loading } }) => {
               radius={90}
               width={300}
               height={200}
-              className='shadow bg-white rounded m-2'
+              className='shadow bg-white m-2 rounded-all'
               labelsRadiusMultiplier={0.8}
               labelsStyle={{ fontSize: 16, fontWeight: 700 }}
               showLabels
@@ -145,7 +145,7 @@ const Charts = ({ trips: { trips, loading } }) => {
             xType='ordinal'
             height={200}
             width={300}
-            className='shadow bg-white rounded m-2'
+            className='shadow bg-white rounded-all m-2'
           >
             <XAxis />
             <YAxis />
@@ -160,7 +160,7 @@ const Charts = ({ trips: { trips, loading } }) => {
             stackBy='y'
             height={200}
             width={300}
-            className='shadow bg-white rounded m-2 px-auto p-2'
+            className='shadow bg-white rounded-all m-2 px-auto p-2'
           >
             <XAxis />
             <YAxis />

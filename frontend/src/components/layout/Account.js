@@ -15,10 +15,10 @@ const Account = ({ auth: { user }, updateUser, deactivateUser, getAllCSV }) => {
 
   useEffect(() => {
     setFormData({
-      username: '' || user.username,
-      email: '' || user.email,
-      first_name: '' || user.first_name,
-      last_name: '' || user.last_name,
+      username: !user || !user.username ? '' : user.username,
+      email: !user || !user.email ? '' : user.email,
+      first_name: !user || !user.first_name ? '' : user.first_name,
+      last_name: !user || !user.last_name ? '' : user.last_name,
     });
   }, [user]);
 
@@ -39,11 +39,11 @@ const Account = ({ auth: { user }, updateUser, deactivateUser, getAllCSV }) => {
 
       <div className='col-sm p-4 text-left' style={{ maxWidth: 450 }}>
         <form onSubmit={onSubmit}>
-          <label className='form-group d-block'>
+          <label className='form-group d-block bg-light shadow p-1'>
             Username:
             <input
               type='text'
-              className='form-control mt-1'
+              className='form-control border-0'
               id='InputUser'
               name='username'
               onChange={onChange}
@@ -51,11 +51,11 @@ const Account = ({ auth: { user }, updateUser, deactivateUser, getAllCSV }) => {
               disabled
             />
           </label>
-          <label className='form-group d-block'>
+          <label className='form-group d-block bg-white shadow p-1'>
             Email:
             <input
               type='email'
-              className='form-control mt-1'
+              className='form-control border-0'
               id='InputEmail'
               name='email'
               onChange={onChange}
@@ -63,11 +63,11 @@ const Account = ({ auth: { user }, updateUser, deactivateUser, getAllCSV }) => {
               required
             />
           </label>
-          <label className='form-group d-block'>
+          <label className='form-group d-block bg-white shadow p-1'>
             First Name:
             <input
               type='text'
-              className='form-control mt-1'
+              className='form-control border-0'
               id='first_name'
               name='first_name'
               onChange={onChange}
@@ -75,11 +75,11 @@ const Account = ({ auth: { user }, updateUser, deactivateUser, getAllCSV }) => {
               required
             />
           </label>
-          <label className='form-group d-block'>
+          <label className='form-group d-block bg-white shadow p-1'>
             Last Name:
             <input
               type='text'
-              className='form-control mt-1'
+              className='form-control border-0'
               id='last_name'
               name='last_name'
               onChange={onChange}
@@ -87,14 +87,15 @@ const Account = ({ auth: { user }, updateUser, deactivateUser, getAllCSV }) => {
               required
             />
           </label>
-          {first_name !== user.first_name ||
-          last_name !== user.last_name ||
-          email !== user.email ? (
-            <button type='submit' className='btn btn-primary'>
+          {user &&
+          (first_name !== user.first_name ||
+            last_name !== user.last_name ||
+            email !== user.email) ? (
+            <button type='submit' className='btn btn-primary shadow'>
               Save
             </button>
           ) : (
-            <button type='submit' className='btn btn-primary' disabled>
+            <button type='submit' className='btn btn-primary shadow' disabled>
               Save
             </button>
           )}
@@ -104,7 +105,7 @@ const Account = ({ auth: { user }, updateUser, deactivateUser, getAllCSV }) => {
             Export All of your trips:{' '}
             <button
               onClick={() => getAllCSV()}
-              className='ml-1 btn btn-sm btn-primary'
+              className='ml-1 btn btn-sm btn-primary shadow'
             >
               Export All
             </button>
@@ -113,7 +114,7 @@ const Account = ({ auth: { user }, updateUser, deactivateUser, getAllCSV }) => {
             Want to deactivate your account?{' '}
             <button
               onClick={() => deactivateUser()}
-              className=' ml-1 btn-danger btn btn-sm'
+              className=' ml-1 btn-danger btn btn-sm shadow'
             >
               Deactivate
             </button>

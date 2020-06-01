@@ -38,59 +38,59 @@ const Register = ({ register, authenticated }) => {
     <section className='text-center mt-4 container'>
       <h1 className='display-3 text-primary mb-4'>Register</h1>
       <div
-        className='mx-auto col-sm bg-light p-4 text-left'
+        className='mx-auto col-sm bg-light p-4 text-left shadow'
         style={{ maxWidth: 450 }}
       >
         <form onSubmit={onSubmit}>
-          <label className='form-group d-block'>
-            Username:
+          <label className='form-group d-block bg-white shadow p-1'>
             <input
               type='text'
-              className='form-control mt-1'
+              className='form-control mt-1 border-0'
               id='InputUser'
               name='username'
               onChange={onChange}
               value={username}
+              placeholder='Username'
               required
             />
           </label>
-          <label className='form-group d-block'>
-            Email:
+          <label className='form-group d-block bg-white shadow p-1'>
             <input
               type='email'
-              className='form-control mt-1'
+              className='form-control mt-1 border-0'
               id='InputEmail'
               name='email'
               onChange={onChange}
               value={email}
+              placeholder='Email Address'
               required
             />
           </label>
-          <label className='form-group d-block'>
-            Password:
+          <label className='form-group d-block bg-white shadow p-1'>
             <input
               type='password'
-              className='form-control mt-1'
+              className='form-control mt-1 border-0'
               id='InputPassword'
               name='password'
               onChange={onChange}
               value={password}
+              placeholder='Password'
               required
             />
           </label>
-          <label className='form-group d-block'>
-            Verify password:
+          <label className='form-group d-block bg-white shadow p-1'>
             <input
               type='password'
-              className='form-control mt-1'
+              className='form-control mt-1 border-0'
               id='InputPassword2'
               name='password2'
               onChange={onChange}
               value={password2}
+              placeholder='Verify Password'
               required
             />
           </label>
-          <button type='submit' className='btn btn-primary'>
+          <button type='submit' className='btn btn-primary shadow'>
             Register
           </button>
         </form>
