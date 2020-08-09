@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -9,6 +9,8 @@ const Login = ({ login, authenticated }) => {
     username: '',
     password: '',
   });
+  const inputRef = useRef(null);
+  useEffect(() => inputRef.current.focus(), []);
 
   const { username, password } = formData;
 
@@ -36,6 +38,7 @@ const Login = ({ login, authenticated }) => {
           <label className='form-group d-block bg-white shadow p-1'>
             <input
               type='text'
+              ref={inputRef}
               className='form-control mt-1 border-0'
               id='InputUser'
               name='username'
